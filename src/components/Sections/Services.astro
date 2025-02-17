@@ -1,0 +1,48 @@
+---
+import CTA from "../CTA.astro";
+import ServiceCard from "../ServiceCard.astro";
+---
+
+<div
+    class="flex flex-col text-white items-center gap-8 bg-zinc-800 py-16 2xl:py-32 px-small-padding md:px-medium-padding 2xl:px-large-padding"
+>
+    <h1 class="text-4xl 2xl:text-6xl font-semibold">Services</h1>
+    <div
+        class="flex flex-col 2xl:flex-row gap-16 justify-between items-center 2xl:items-stretch text-white"
+    >
+        <ServiceCard
+            title="Custom Websites"
+            image="coding.svg"
+            description=`We’re dedicated to creating a stunning website that captivates your audience and elevates your business with 
+            cutting-edge design and technology. Whether you need a sleek, informative brochure site or a feature-rich platform with advanced functionality, 
+            we’ll bring your vision to life seamlessly.`
+            link=""
+        />
+        <ServiceCard
+            title="Ecommerce"
+            image="ecom.svg"
+            description=`Launching an online storefront is one of the most powerful ways to expand your reach, attract more customers, 
+            and boost your sales. But why deal with the stress and complexities of setting up a website and managing fulfillment when we can handle it all for you? 
+            Let us take care of the heavy lifting so you can focus on what you do best—growing your business and delighting your customers!`
+            link=""
+        />
+        <!--
+        <ServiceCard
+            title="Social Media Ads"
+            image="smm.svg"
+            description=`Social media ads are a powerful tool for attracting high-quality leads and driving more sales to your business. But crafting the perfect campaign takes time, strategy, and expertise. 
+            Let us handle the heavy lifting—creating compelling ads, targeting the right audience, and optimizing for conversions—so you can enjoy a steady stream of new customers without the hassle!`
+            link=""
+        />
+-->
+        <ServiceCard
+            title="IT Support"
+            image="it.svg"
+            description=`We're here to make your tech experience seamless and stress-free! Whether you need expert management for your existing website, 
+            customized networking solutions, or hassle-free setup for smart devices, we've got you covered. Let us handle the technical details 
+            so you can focus on what matters most—growing your business and staying connected!`
+            link=""
+        />
+    </div>
+    <CTA text="View More" destination="/services" />
+</div>

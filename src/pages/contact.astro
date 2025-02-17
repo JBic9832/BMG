@@ -1,0 +1,15 @@
+---
+import ContactForm from "../components/ContactForm";
+import Layout from "../layouts/Layout.astro";
+import "../styles/base.css";
+---
+
+<Layout title="Contact">
+    <main>
+        <div
+            class="py-16 xl:py-64 px-small-padding md:px-medium-padding xl:px-large-padding"
+        >
+            <ContactForm dark={false} client:only />
+        </div>
+    </main>
+</Layout>

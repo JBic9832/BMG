@@ -1,0 +1,15 @@
+---
+interface Props {
+    text: string;
+    destination: string;
+}
+
+const { text, destination } = Astro.props;
+---
+
+<a
+    class="no-underline bg-primary-blue shadow-sm p-3 sm:p-4 rounded-2xl text-white font-semibold"
+    href={destination}
+>
+    {text}
+</a>
