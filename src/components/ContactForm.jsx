@@ -20,7 +20,7 @@ const ContactForm = ({ dark }) => {
 
     if (!submitted) {
         return (
-            <form onSubmit={submitForm} id="form" netlify>
+            <form onSubmit={submitForm} id="form" data-netlify="true" method="POST">
                 <div className="flex flex-col xl:flex-row justify-between gap-8">
                     <div className="flex flex-col justify-between gap-4">
                         <div
@@ -39,28 +39,28 @@ const ContactForm = ({ dark }) => {
                         <div className="flex flex-col gap-4">
                             <div className="flex flex-col xl:flex-row gap-4">
                                 <input
-                                    className={`border-2 border-primary-blue p-2 rounded-lg ${dark ? "bg-dark" : "bg-light"}`}
+                                    className={`border-2 border-primary-blue p-2 rounded-lg ${dark ? "bg-dark text-white" : "bg-light text-black"}`}
                                     type="text"
                                     placeholder="First Name"
                                 />
                                 <input
-                                    className={`border-2 border-primary-blue p-2 rounded-lg ${dark ? "bg-dark" : "bg-light"}`}
+                                    className={`border-2 border-primary-blue p-2 rounded-lg ${dark ? "bg-dark text-white" : "bg-light text-black"}`}
                                     type="text"
                                     placeholder="Last Name"
                                 />
                                 <input
-                                    className={`border-2 border-primary-blue p-2 rounded-lg ${dark ? "bg-dark" : "bg-light"}`}
+                                    className={`border-2 border-primary-blue p-2 rounded-lg ${dark ? "bg-dark text-white" : "bg-light text-black"}`}
                                     type="email"
                                     placeholder="Email"
                                 />
                                 <input
-                                    className={`border-2 border-primary-blue p-2 rounded-lg ${dark ? "bg-dark" : "bg-light"}`}
+                                    className={`border-2 border-primary-blue p-2 rounded-lg ${dark ? "bg-dark text-white" : "bg-light text-black"}`}
                                     type="tel"
                                     placeholder="Phone Number"
                                 />
                             </div>
                             <textarea
-                                className={`border-2 border-primary-blue p-2 rounded-lg resize-none ${dark ? "bg-dark" : "bg-light"}`}
+                                className={`border-2 border-primary-blue p-2 rounded-lg resize-none ${dark ? "bg-dark text-white" : "bg-light text-black"}`}
                                 name="message"
                                 id="MESSAGE"
                                 placeholder="Message"></textarea>
@@ -81,7 +81,7 @@ const ContactForm = ({ dark }) => {
         );
     } else {
         return (
-            <div>
+            <div className="text-white">
                 <h1>Thank you! We will get back to you with a phone call as soon as possible!</h1>
             </div>
         );
