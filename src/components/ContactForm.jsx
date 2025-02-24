@@ -20,7 +20,7 @@ const ContactForm = ({ dark }) => {
 
     if (!submitted) {
         return (
-            <form onSubmit={submitForm} id="form" action="" netlify>
+            <form onSubmit={submitForm} id="form" netlify>
                 <div className="flex flex-col xl:flex-row justify-between gap-8">
                     <div className="flex flex-col justify-between gap-4">
                         <div
@@ -32,7 +32,7 @@ const ContactForm = ({ dark }) => {
                         <p className={`text-base ${dark ? "text-white" : "text-black"}`}>Leave us your contact information with a short description of what you need and we will give you a call ASAP!</p>
                         <div className={`${dark ? "text-white" : "text-black"}`}>
                             {/* <div>GIVE US A CALL: <a href="tel:+15555555555"><span className="font-semibold text-primary-blue">(555) 555-5555</span></a></div> */}
-                            <div>EMAIL: <span className="font-semibold text-primary-blue">company@email.com</span></div>
+                            {/* <div>EMAIL: <span className="font-semibold text-primary-blue">bickfordjoe86@gmail.com</span></div> */}
                         </div>
                     </div>
                     <div className="flex flex-col gap-4 justify-between">
