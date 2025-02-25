@@ -1,0 +1,71 @@
+---
+const { dark } = Astro.props;
+---
+
+<div id="contact">
+    <form id="form" data-netlify="true" method="POST">
+        <div class="flex flex-col xl:flex-row justify-between gap-8">
+            <div class="flex flex-col justify-between gap-4">
+                <div
+                    class="flex gap-2 lg:flex-col text-primary-blue text-4xl lg:text-6xl"
+                >
+                    <span>CONTACT</span>
+                    <span>US</span>
+                </div>
+                <p class={`text-base ${dark ? "text-white" : "text-black"}`}>
+                    Leave us your contact information with a short description
+                    of what you need and we will give you a call ASAP!
+                </p>
+                <div class={`${dark ? "text-white" : "text-black"}`}>
+                    {
+                        /* <div>GIVE US A CALL: <a href="tel:+15555555555"><span class="font-semibold text-primary-blue">(555) 555-5555</span></a></div> */
+                    }
+                    {
+                        /* <div>EMAIL: <span class="font-semibold text-primary-blue">bickfordjoe86@gmail.com</span></div> */
+                    }
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 justify-between">
+                <div class="flex flex-col gap-4">
+                    <div class="flex flex-col xl:flex-row gap-4">
+                        <input
+                            class={`border-2 border-primary-blue p-2 rounded-lg ${dark ? "bg-dark text-white" : "bg-light text-black"}`}
+                            type="text"
+                            placeholder="First Name"
+                        />
+                        <input
+                            class={`border-2 border-primary-blue p-2 rounded-lg ${dark ? "bg-dark text-white" : "bg-light text-black"}`}
+                            type="text"
+                            placeholder="Last Name"
+                        />
+                        <input
+                            class={`border-2 border-primary-blue p-2 rounded-lg ${dark ? "bg-dark text-white" : "bg-light text-black"}`}
+                            type="email"
+                            placeholder="Email"
+                        />
+                        <input
+                            class={`border-2 border-primary-blue p-2 rounded-lg ${dark ? "bg-dark text-white" : "bg-light text-black"}`}
+                            type="tel"
+                            placeholder="Phone Number"
+                        />
+                    </div>
+                    <textarea
+                        class={`border-2 border-primary-blue p-2 rounded-lg resize-none ${dark ? "bg-dark text-white" : "bg-light text-black"}`}
+                        name="message"
+                        id="MESSAGE"
+                        placeholder="Message"></textarea>
+                </div>
+                <div class="flex lg:gap-4 justify-end">
+                    <button type="reset" class="font-semibold text-red-500"
+                        >Cancel</button
+                    >
+                    <button
+                        type="submit"
+                        class="ml-auto lg:ml-0 font-semibold text-primary-blue"
+                        >Submit</button
+                    >
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
