@@ -20,7 +20,7 @@ const ContactForm = ({ dark }) => {
 
     if (!submitted) {
         return (
-            <form onSubmit={submitForm} id="form" data-netlify="true" method="POST">
+            <form onSubmit={submitForm} id="form" data-netlify="true" method="POST" action="/">
                 <div className="flex flex-col xl:flex-row justify-between gap-8">
                     <div className="flex flex-col justify-between gap-4">
                         <div
