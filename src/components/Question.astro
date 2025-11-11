@@ -2,11 +2,11 @@
 interface Props {
     question: string;
     answer: string;
-	cta: string;
-	cta_link: string;
+	cta?: string;
+	cta_link?: string;
 }
 
-const { question, answer, children, cta, cta_link } = Astro.props;
+const { question, answer, cta, cta_link } = Astro.props;
 ---
 
 <div class="flex flex-col gap-2">
