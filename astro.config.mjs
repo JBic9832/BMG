@@ -7,9 +7,11 @@ import react from '@astrojs/react';
 
 import netlify from "@astrojs/netlify";
 
+import svelte from '@astrojs/svelte';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind({ applyBaseStyles: false }), react({ experimentalReactChildren: true, })],
-  output: 'server',
-  adapter: netlify(),
+	integrations: [tailwind({ applyBaseStyles: false }), react({ experimentalReactChildren: true, }), svelte({ extensions: ['.svelte'] })],
+	output: 'server',
+	adapter: netlify(),
 });

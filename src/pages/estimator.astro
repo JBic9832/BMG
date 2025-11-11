@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Estimator from "../components/Estimator.svelte"
+import "../styles/base.css";
+---
+
+<Layout title="Estimator">
+    <main>
+        <Estimator client:load/>
+    </main>
+</Layout>
