@@ -11,5 +11,5 @@ const { question, answer, cta, cta_link } = Astro.props;
 
 <div class="flex flex-col gap-2">
     <h1 class="text-2xl 2xl:text-4xl font-semibold">{question}</h1>
-	<p class="text-base 2xl:text-xl">{answer} <span class="text-primary-blue">{cta}</span></p>
+	<p class="text-base 2xl:text-xl">{answer} <a href={cta_link}><span class="text-primary-blue">{cta}</span></a> </p>
 </div>
