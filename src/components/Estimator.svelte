@@ -1,11 +1,14 @@
 <script>
 
-let count = $state(0);
 
 </script>
 
-<button onclick={() => count++}>
+<div>
+	<div>
+		<p>How many bedrooms do you plan to setup?</p>
+		<div></div>
 
-	clicks: {count}
-
-</button>
+		<p></p>
+	</div>
+	<div></div>
+</div>
